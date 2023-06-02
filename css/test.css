@@ -1,0 +1,197 @@
+
+
+/* 页脚 */
+#footer {
+    background: var(--card-bg);
+}
+
+#footer-wrap {
+    padding-top: 12px;
+    height: 90px;
+    box-shadow: var(--card-box-shadow);
+    border-radius: 18px 18px 0 0;
+    color: var(--font-color);
+    position: relative;
+    text-align: center
+}
+
+#footer-wrap a {
+    color: var(--font-color)
+}
+
+#footer-wrap .icp-icon {
+    padding: 0 4px;
+    vertical-align: text-bottom;
+    max-height: 1.4em;
+    width: auto
+}
+
+.github-badge {
+	display: inline-block;
+	border-radius: 4px;
+	text-shadow: none;
+	font-size: 12px;
+	color: #fff;
+	line-height: 15px;
+	background-color: #ABBAC3;
+  margin-bottom: 5px;
+}
+.github-badge .badge-subject {
+	display: inline-block;
+	background-color: #4D4D4D;
+	padding: 4px 4px 4px 6px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.github-badge .badge-value {
+	display: inline-block;
+	padding: 4px 6px 4px 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.github-badge .bg-brightgreen {
+	background-color: #4DC820 !important;
+}
+.github-badge .bg-orange {
+	background-color: #FFA500 !important;
+}
+.github-badge .bg-blueviolet {
+	background: linear-gradient(to right, #3ca5f6, #a86af9) !important;
+}
+.github-badge .bg-lightgrey {
+	background-color: #9F9F9F !important;
+}
+
+/* 首页文章 */
+#recent-posts>.recent-post-item:hover .recent-post-info .content {
+    opacity: 1;
+    line-height: 2;
+    transition: all .3s;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.content {
+    opacity: 0;
+    line-height: .7;
+    transition: all .3s;
+}
+
+#recent-posts>.recent-post-item .post_cover img.post_bg {
+    border-radius: 30px;
+    padding: 15px
+}
+
+#recent-posts>.recent-post-item:hover img.post_bg {
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -o-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+}
+
+/* 选中 */
+#aside-content .card-archives ul.card-archive-list>.card-archive-list-item a:hover,
+.site-data>a:hover,
+#aside-content .card-categories ul.card-category-list>.card-category-list-item a:hover {
+    border-radius: 9px;
+    color: var(--card-bg);
+    background-color: var(--text-bg-hover);
+}
+
+#aside-content #card-toc .toc-content .toc-link.active {
+    border-left-color: #2962ff;
+    background: var(--btn-bg);
+    border-radius: 7px;
+    box-shadow: 0 8px 12px -3px rgba(73,177,245,0.2);
+}
+
+/* 底部心形 */
+#heartbeat{color:red;animation:iconAnimate 1.33s ease-in-out infinite}@-moz-keyframes iconAnimate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,60%,80%{transform:scale(1.1)}50%,70%{transform:scale(1.1)}}@-webkit-keyframes iconAnimate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,60%,80%{transform:scale(1.1)}50%,70%{transform:scale(1.1)}}@-o-keyframes iconAnimate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,60%,80%{transform:scale(1.1)}50%,70%{transform:scale(1.1)}}@keyframes iconAnimate{0%,100%{transform:scale(1)}10%,30%{transform:scale(.9)}20%,40%,60%,80%{transform:scale(1.1)}50%,70%{transform:scale(1.1)}}
+
+/* 标题样式 */
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  -webkit-animation: ccc 4s linear infinite;
+  animation: ccc 4s linear infinite;
+}
+/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */
+@-webkit-keyframes ccc {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-1turn);
+    transform: rotate(-1turn);
+  }
+}
+@keyframes ccc {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-1turn);
+    transform: rotate(-1turn);
+  }
+}
+/* 设置风车颜色 */
+#content-inner.layout h1::before {
+  color: #ef50a8;
+  margin-left: -1.55rem;
+  font-size: 1.3rem;
+  margin-top: -0.23rem;
+}
+#content-inner.layout h2::before {
+  color: #fb7061;
+  margin-left: -1.35rem;
+  font-size: 1.1rem;
+  margin-top: -0.12rem;
+}
+#content-inner.layout h3::before {
+  color: #ffbf00;
+  margin-left: -1.22rem;
+  font-size: 0.95rem;
+  margin-top: -0.09rem;
+}
+#content-inner.layout h4::before {
+  color: #a9e000;
+  margin-left: -1.05rem;
+  font-size: 0.8rem;
+  margin-top: -0.09rem;
+}
+#content-inner.layout h5::before {
+  color: #57c850;
+  margin-left: -0.9rem;
+  font-size: 0.7rem;
+  margin-top: 0rem;
+}
+#content-inner.layout h6::before {
+  color: #5ec1e0;
+  margin-left: -0.9rem;
+  font-size: 0.66rem;
+  margin-top: 0rem;
+}
+/* s设置风车hover动效 6s那里可以自己调节快慢*/
+#content-inner.layout h1:hover,
+#content-inner.layout h2:hover,
+#content-inner.layout h3:hover,
+#content-inner.layout h4:hover,
+#content-inner.layout h5:hover,
+#content-inner.layout h6:hover {
+  color: var(--theme-color);
+}
+#content-inner.layout h1:hover::before,
+#content-inner.layout h2:hover::before,
+#content-inner.layout h3:hover::before,
+#content-inner.layout h4:hover::before,
+#content-inner.layout h5:hover::before,
+#content-inner.layout h6:hover::before {
+  color: var(--theme-color);
+  -webkit-animation: ccc 6s linear infinite;
+  animation: ccc 6s linear infinite;
+}
